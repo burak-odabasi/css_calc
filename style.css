@@ -1,7 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
   background: red;
   height: 100px;
   /* width: 300px; */
   /* width: calc(100px + 200px); */
-  width: calc(100%-30px);
+  width: calc(100% - 30px);
+  margin: 0 auto;
 }
