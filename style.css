@@ -1,4 +1,7 @@
 .container {
   background: red;
   height: 100px;
+  /* width: 300px; */
+  /* width: calc(100px + 200px); */
+  width: calc(100%-30px);
 }
