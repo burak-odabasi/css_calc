@@ -1,13 +1,26 @@
+:root {
+  --hue: 180;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .container {
+  --width: 100px;
   background: red;
   height: 100px;
   /* width: 300px; */
   /* width: calc(100px + 200px); */
-  width: calc(100% - 30px);
+  /* width: calc(100% - 30px); */
+  width: calc(var(--width) * 2.3);
   margin: 0 auto;
+}
+
+.primary {
+  background-color: hsl(var(--hue), 100%, 50%);
+}
+.danger {
+  background-color: hsl(calc(var(--hue) - 180), 100%, 50%);
 }
